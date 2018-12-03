@@ -23,7 +23,6 @@ class App extends Component {
   }
 
   reduce=()=>{
-    
     const {dispatch}=this.props
     dispatch(decrease(this.props.test.DECREASE.num-1))
   }
