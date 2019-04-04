@@ -1,8 +1,7 @@
 
 
 const initialState={
-    INCREASE:{num:0},
-    DECREASE:{num:0}
+    COUNT:{num:0}
 }
 
 //处理store某个节点的数据 
@@ -14,10 +13,10 @@ const reducer=(state=initialState,action)=>{
         case'LOUGOUT':
             return {...state}
         case 'INCREASE':
-            return {...state,INCREASE:action.payload} //{...{}} 会生成新对象 必须是新对象
-            //将INCREASE中经过saga处理后的数据传递到initilaState，通过对象传递
+            return {...state,COUNT:action.payload} //{...{}} 会生成新对象 必须是新对象
+            //将COUNT中经过saga处理后的数据传递到initilaState，通过对象传递
         case 'DECREASE':
-            return {...state,DECREASE:action.payload}
+            return {...state,COUNT:action.payload}
         default:
             return state
     }

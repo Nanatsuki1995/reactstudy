@@ -19,12 +19,12 @@ class App extends Component {
 
   add=()=>{
     const {dispatch,}=this.props
-    dispatch(increase(this.props.test.INCREASE.num+1))//将action中定义的INCREASE下的payload下的num + 1
+    dispatch(increase(this.props.test.COUNT.num+2))//将action中定义的COUNT下的payload下的num + 1
   }
 
   reduce=()=>{
     const {dispatch}=this.props
-    dispatch(decrease(this.props.test.DECREASE.num-1))
+    dispatch(decrease(this.props.test.COUNT.num-1))
   }
 
 
@@ -37,10 +37,9 @@ class App extends Component {
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
-          <button onClick={this.add}>加1</button>
+          <button onClick={this.add}>加2</button>
           <button onClick={this.reduce}>剪1</button>
-          <input type='text'  value={this.props.test.INCREASE.num} />
-          <input type='text'  value={this.props.test.DECREASE.num} />
+          <input type='text'  value={this.props.test.COUNT.num} />
           <a
             className="App-link"
             href="https://reactjs.org"
