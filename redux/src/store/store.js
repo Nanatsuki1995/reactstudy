@@ -2,7 +2,7 @@
  * @Author: zengjian 
  * @Date: 2018-12-03 18:34:22 
  * @Last Modified by: zengjian
- * @Last Modified time: 2018-12-03 20:06:55
+ * @Last Modified time: 2019-04-04 17:58:21
  */
 export default class createStore{
     constructor(reducer,initiaState){
