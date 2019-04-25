@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import City from './city'
-import Time from './time'
-import Todo from './todo'
-import Clock from './clock'
-import Toggle from './toggle'
+import City from '../componts/city'
+import Time from '../componts/time'
+import Todo from '../componts/todo'
+import Clock from '../componts/clock'
+import Toggle from '../componts/toggle'
+import LoginControl from '../componts/logincontrol'
 import './simple.scss'
 
 class Simple extends React.Component {
@@ -18,6 +19,7 @@ class Simple extends React.Component {
                 <Todo/>
                 <Clock/>
                 <Toggle/>
+                <LoginControl/>
             </div>
 
         )
