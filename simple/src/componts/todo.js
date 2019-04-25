@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './todo.scss'
 
 class Todo extends React.Component{
     constructor(props) {
